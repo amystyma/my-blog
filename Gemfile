@@ -9,6 +9,7 @@ group :development do
 end
 
 
+gem 'compass'
 gem 'foundation-rails'
 gem 'sass-rails', '~> 4.0.3'
 gem 'coffee-rails', '~> 4.0.0'
