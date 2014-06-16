@@ -2,16 +2,54 @@ input[type="submit"] {
   @include button;
 }
 
+body {
+  background: #a28491; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #a28491 0%, #947481 98%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#a28491), color-stop(98%,#947481)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #a28491 0%,#947481 98%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #a28491 0%,#947481 98%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #a28491 0%,#947481 98%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #a28491 0%,#947481 98%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a28491', endColorstr='#947481',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
 div#main {
   @include grid-row;
+  background: #5d3a49; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #5d3a49 16%, #3b2f3a 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(16%,#5d3a49), color-stop(100%,#3b2f3a)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #5d3a49 16%,#3b2f3a 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #5d3a49 16%,#3b2f3a 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #5d3a49 16%,#3b2f3a 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #5d3a49 16%,#3b2f3a 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d3a49', endColorstr='#3b2f3a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  padding: 10px;
+  border-radius: 15px;
 }
+
+.top-bar, .top-bar-section li a{
+	background: none !important;
+	height: 100px;
+}
+
 
 footer {
   margin-top: 50px;
-  background-color: #000;
-  color: #eee;
+  background-color: none;
+  color: none;
   text-align: center;
   p {
     line-height: 100px;
   }
+}
+
+ h1 { 
+ font-family: 'Dancing Script', cursive; 
+ font-weight: 200;
+	}
+
+h1 a {
+ font-size: 65px;
+ opacity: 0.8;
 }
