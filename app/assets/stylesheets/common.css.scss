@@ -10,27 +10,72 @@ body {
   background: -o-radial-gradient(center, ellipse cover,  #a28491 0%,#947481 98%); /* Opera 12+ */
   background: -ms-radial-gradient(center, ellipse cover,  #a28491 0%,#947481 98%); /* IE10+ */
   background: radial-gradient(ellipse at center,  #a28491 0%,#947481 98%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a28491', endColorstr='#947481',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a28491', endColorstr='#947481',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: -moz-radial-gradient(top right, ellipse cover,  #a28491 0%, #947481 98%); /* FF3.6+ */
+  background: -webkit-gradient(radial, top right, 0px, center center, 100%, color-stop(0%,#a28491), color-stop(98%,#947481)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(top right, ellipse cover,  #a28491 0%,#947481 98%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(top right, ellipse cover,  #a28491 0%,#947481 98%); /* Opera 12+ */
+  background: -ms-radial-gradient(top right, ellipse cover,  #a28491 0%,#947481 98%); /* IE10+ */
+  background: radial-gradient(ellipse at top right,  #a28491 0%,#947481 98%); /* W3C */
 
+}
+
+div#wrapper {
+  width: 90%;
+  margin: 0 auto;
 }
 
 div#main {
   @include grid-row;
   background: #5d3a49; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover,  #5d3a49 16%, #3b2f3a 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(16%,#5d3a49), color-stop(100%,#3b2f3a)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #5d3a49 16%,#3b2f3a 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #5d3a49 16%,#3b2f3a 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #5d3a49 16%,#3b2f3a 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  #5d3a49 16%,#3b2f3a 100%); /* W3C */
+  background: -moz-radial-gradient(top center ellipse cover,  #5d3a49 16%, #3b2f3a 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, top center, 0px, center center, 100%, color-stop(16%,#5d3a49), color-stop(100%,#3b2f3a)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(top center, ellipse cover,  #5d3a49 16%,#3b2f3a 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(top center, ellipse cover,  #5d3a49 16%,#3b2f3a 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(top center, ellipse cover,  #5d3a49 16%,#3b2f3a 100%); /* IE10+ */
+  background: radial-gradient(ellipse at top center,  #5d3a49 16%,#3b2f3a 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d3a49', endColorstr='#3b2f3a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  padding: 10px;
+  padding: 15px;
   border-radius: 15px;
+  width: 73%;
+  float: left;
+}
+
+div#sidebar {
+  width: 25%;
+  float: right;
+  top: 100px;
+  border-radius: 15px;
+  padding: 10px;
+  background: #5d3a49; /* Old browsers */
+  background: -moz-radial-gradient(top center ellipse cover,  #5d3a49 16%, #3b2f3a 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, top center, 0px, center center, 100%, color-stop(16%,#5d3a49), color-stop(100%,#3b2f3a)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(top center, ellipse cover,  #5d3a49 16%,#3b2f3a 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(top center, ellipse cover,  #5d3a49 16%,#3b2f3a 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(top center, ellipse cover,  #5d3a49 16%,#3b2f3a 100%); /* IE10+ */
+  background: radial-gradient(ellipse at top center,  #5d3a49 16%,#3b2f3a 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d3a49', endColorstr='#3b2f3a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 .top-bar, .top-bar-section li a{
 	background: none !important;
 	height: 100px;
+}
+
+.icon {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(amy.jpg) no-repeat;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 
@@ -47,9 +92,25 @@ footer {
  h1 { 
  font-family: 'Dancing Script', cursive; 
  font-weight: 200;
+ color: white;
+ opacity: 0.8;
 	}
 
 h1 a {
  font-size: 65px;
  opacity: 0.8;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+  color: white;
+  opacity: 0.8;
+}
+
+h3 {
+  font-family: 'Droid Serif', serif;
+  font-size: 12px;
+  font-weight: 10;
+  color: white;
 }
