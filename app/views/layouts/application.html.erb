@@ -12,8 +12,8 @@
   <%= auto_discovery_link_tag(:atom, posts_path(:atom)) %>
 </head>
 <body>
+<div id="wrapper" class="clearfix">
 	<%= render :partial => 'layouts/header' %>
-<div id="wrapper">
 	<div id="main">
 		<%= yield %>
 	</div>

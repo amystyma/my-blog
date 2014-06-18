@@ -1,17 +1,15 @@
 source 'https://rubygems.org'
 
 group :production do
-        gem 'pg'
-        gem 'rails_12factor'
+	gem 'pg'
+	gem 'rails_12factor'
 end
 
 group :development do 
-		gem 'sqlite3'
+	gem 'sqlite3'
 end
 
-
 gem 'compass'
-gem 'foundation-rails'
 gem 'sass-rails', '~> 4.0.3'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'

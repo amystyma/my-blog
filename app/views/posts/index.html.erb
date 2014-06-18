@@ -1,16 +1,15 @@
 <% @posts.each do |post| %>
 <article>
   <header>
-    <h1 style="overflow:visible;"><%= post.title %></h1>
+    <h1 class="post-title"><%= post.title %></h1>
     <div class="date-time"><time datetime="post.created_at">
       <%= post.created_at.strftime('%a %b %e %Y at %r') %>
     </time></div>
-    <br/>
   </header>
   <div class="post-body"> 
-    <%= simple_format truncate(post.body, :length => 215) %>
+    <%= simple_format(truncate(post.body, :length => 215)).html_safe %>
   </div>
-  <h3><%= link_to 'Read more...', post %></h3>
+  <h3 class="link"><%= link_to 'Read more...', post %></h3>
   <hr style="opacity: 0.1;">
 </artice>
 <% end %>
