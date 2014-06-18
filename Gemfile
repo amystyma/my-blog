@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 group :production do
         gem 'pg'
         gem 'rails_12factor'
+        gem 'rails_log_stdout'
+        gem 'rails3_serve_status_assets'
 end
 
 group :development do 
