@@ -2,12 +2,14 @@
 <article>
   <header>
     <h1 style="overflow:visible;"><%= post.title %></h1>
-    <time datetime="post.created_at">
+    <h4><time datetime="post.created_at">
       Posted On:  <%= post.created_at.strftime('%D') %>
-    </time>
+    </time></h4>
   </header>
   <div class="post-body">
+   <h3> 
     <%= post.body %>
+  </h3>
   </div>
   <br>
   <%= link_to 'Read more...', post %>
