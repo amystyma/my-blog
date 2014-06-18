@@ -1,2 +1,6 @@
-<h2><%= link_to_unless_current post.title, @post %></h2>
-<h3><%= simple_format post.body %><h3>
+<h1><%= link_to_unless_current post.title, @post %></h1>
+    <div class="date-time"><time datetime="post.created_at">
+      <%= post.created_at.strftime('%a %b %e %Y at %r') %>
+    </time></div>
+    </br>
+<div class="post-body"><%= simple_format post.body %></div>
