@@ -17,7 +17,10 @@ body {
   background: -o-radial-gradient(top right, ellipse cover,  #a28491 0%,#947481 98%); /* Opera 12+ */
   background: -ms-radial-gradient(top right, ellipse cover,  #a28491 0%,#947481 98%); /* IE10+ */
   background: radial-gradient(ellipse at top right,  #a28491 0%,#947481 98%); /* W3C */
-
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 div#wrapper {
@@ -121,12 +124,25 @@ h3 {
   color: white;
 }
 
-h4 {
+.post-body {
+  font-family: 'Droid Serif', serif;
+  color: white;
+  opacity: 0.8;
+}
+
+.date-time {
   font-family: 'Droid Serif', serif;
   font-size: 10px;
   font-weight:10;
-  color: gray;
+  color: white;
+  opacity: 0.7;
 }
 
+.footer {
+ font-family: 'Droid Serif', serif;
+ font-size: 8px;
+ color: white;
+ opacity: 0.7;
+}
 
 

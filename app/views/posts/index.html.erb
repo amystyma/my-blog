@@ -2,14 +2,12 @@
 <article>
   <header>
     <h1 style="overflow:visible;"><%= post.title %></h1>
-    <h4><time datetime="post.created_at">
-      Posted On:  <%= post.created_at.strftime('%D') %>
-    </time></h4>
+    <div class="date-time"><time datetime="post.created_at">
+      <%= post.created_at.strftime('%a %b %e %Y at %r') %>
+    </time></div>
   </header>
-  <div class="post-body">
-   <h3> 
-    <%= post.body %>
-  </h3>
+  <div class="post-body"> 
+    <%= simple_format truncate(post.body, :length => 215) %>
   </div>
   <br>
   <%= link_to 'Read more...', post %>
