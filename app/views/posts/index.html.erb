@@ -7,9 +7,10 @@
     </time></div>
   </header>
   <div class="post-body"> 
-    <%= simple_format(truncate_html(post.body, :length => 215)).html_safe %>
+    <%= simple_format(truncate_html(post.body, :length => 200)).html_safe %>
   </div>
   <h3 class="link"><%= link_to 'Read more...', post %></h3>
   <hr style="opacity: 0.1;">
 </artice>
 <% end %>
+<%= paginate @posts %>
