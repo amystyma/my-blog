@@ -368,4 +368,42 @@ p.button {
   }
 }
 
+.button-edit {
+  background: white;
+  opacity: 0.4;
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: #946b68;
+  font-size: 12px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.button-edit:hover {
+  border-top-color: #421f31;
+  background: #421f31;
+  color: #ffffff;
+}
+.button-edit:active {
+  border-top-color: #946b68;
+  background: #946b68;
+}
+
+.button-edit {
+
+  a:link {
+    text-decoration: none;
+    color: #421f31;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
 
