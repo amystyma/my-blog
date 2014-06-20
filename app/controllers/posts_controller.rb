@@ -58,14 +58,6 @@ class PostsController < ApplicationController
     end
   end
 
-def mercury_update
-  post = Post.find(params[:id])
-  post.title = params[:content][:post_title][:value]
-  post.body = params[:content][:post_body][:value]
-  post.save!
-  render text: '{"url":"'+ post_path(post.slug) +'"}'
-end
-
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy

@@ -242,11 +242,45 @@ img {
 /* close commented backslash hack */
 
 .pagination {
-  font-family: 'Droid Serif', serif;
+  font-family: Helvetica;
   font-size: 14px;
   text-align: center;
-  color: white;
-  opacity: 0.8;
+  font-color: #421F31;
+}
+
+.page-button {
+  text-decoration: none;
+  background: #967784;
+  opacity: 0.7;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: #946b68;
+  font-size: 12px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.page-button:active {
+  border-top-color: #946b68;
+  background: #946b68;
+}
+
+.page-button{
+
+  a:link {
+    text-decoration: none;
+    color: #463340;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: #463340;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 .form-post
