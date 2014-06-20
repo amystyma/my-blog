@@ -282,17 +282,8 @@ p.button {
   margin-right: 3px;
   border-top: 1px solid #421f31;
   background: #421f31;
-  background: -webkit-gradient(linear, left top, left bottom, from(#421f31), to(#421f31));
-  background: -webkit-linear-gradient(top, #421f31, #421f31);
-  background: -moz-linear-gradient(top, #421f31, #421f31);
-  background: -ms-linear-gradient(top, #421f31, #421f31);
-  background: -o-linear-gradient(top, #421f31, #421f31);
   padding: 8px 16px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
   border-radius: 15px;
-  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
   box-shadow: rgba(0,0,0,1) 0 1px 0;
   text-shadow: rgba(0,0,0,.4) 0 1px 0;
   color: #946b68;
@@ -330,6 +321,43 @@ p.button {
   }
 }
 
+.button-sign-in {
+  background: white;
+  opacity: 0.4;
+  padding: 8px 16px;
+  border-radius: 15px;
+  color: #946b68;
+  font-size: 20px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.button-sign-in:hover {
+  border-top-color: #421f31;
+  background: #421f31;
+  color: #ffffff;
+}
+.button-sign-in:active {
+  border-top-color: #946b68;
+  background: #946b68;
+}
 
+.button-sign-in {
+
+  a:link {
+    text-decoration: none;
+    color: #421f31;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
 
 
