@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
+  devise_for :admins
+  devise_for :users
   resources :posts do 
-    resources :comments, :only => [:create]
+  resources :comments, :only => [:create]
 end
 
   root :to => 'posts#index'

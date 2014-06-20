@@ -16,6 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'truncate_html'
 gem 'kaminari'
 gem 'tinymce-rails'
+gem 'devise'
 
 gem 'rails', '4.1.1'
 gem 'jquery-rails'

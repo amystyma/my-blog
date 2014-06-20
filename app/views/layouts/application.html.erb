@@ -10,16 +10,27 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= auto_discovery_link_tag(:atom, posts_path(:atom)) %>
+  <p class="button">
+  <% if user_signed_in? %>
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+<% else %>
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+<% end %>
 </head>
 <body>
 <div id="wrapper" class="clearfix">
 	<%= render :partial => 'layouts/header' %>
 	<div id="main">
+  <% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
 		<%= yield %>
 	</div>
 	<%= render :partial => 'layouts/sidebar' %>
 </div>
-		<%= render :partial => 'layouts/footer' %>
+	<%= render :partial => 'layouts/footer' %>
 </body>
-jQuery(parent).trigger('initialize:frame');
 </html>
