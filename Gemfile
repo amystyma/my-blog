@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 group :production do
-	gem 'pg'
 	gem 'rails_12factor'
 end
 
@@ -17,6 +16,7 @@ gem 'truncate_html'
 gem 'kaminari'
 gem 'tinymce-rails'
 gem 'devise'
+gem 'pg'
 
 gem 'rails', '4.1.1'
 gem 'jquery-rails'
