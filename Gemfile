@@ -14,7 +14,6 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'truncate_html'
 gem 'kaminari'
-gem 'tinymce-rails'
 gem 'devise'
 gem 'pg'
 
