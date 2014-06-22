@@ -1,0 +1,14 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: ghostpeep
+  pool: 5
+  
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: db
+  pool: 5
+  host: 172.17.42.1
+  username: root
+  password: Rails.application.secrets.prod_db_password
